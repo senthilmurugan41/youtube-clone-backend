@@ -1,6 +1,19 @@
+server:
+  port: 8090
 spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
   data:
     mongodb:
       host: localhost
     port: 27017
-    database: youtube-clone
+    database: youtube-clone-project
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+
